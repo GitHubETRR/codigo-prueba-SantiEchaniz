@@ -20,13 +20,16 @@ main ()
   scanf ("%d", &desc);
   descpor = 100-desc;
   res = (descpor*precioventa/100);
-  printf("Su precio con descuento es de %d", res);
+  printf("Su precio con descuento es de: %d", res);
+  printf(" Pesos");
   if(res<preciopropio){
       Perdida= preciopropio-res;
-      printf("Usted tiene una perdida de: %d", Perdida);
+      printf("\nUsted tiene una perdida de: %d", Perdida);
+      printf(" Pesos");
   }
   if(res>preciopropio){
       Ganancia= res-preciopropio;
       printf("Usted tiene una ganancia de: %d", Ganancia);
+      printf(" Pesos");
   }
 }
