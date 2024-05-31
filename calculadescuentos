@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int
+main ()
+{
+  int desc = 0;
+  int precio = 0;
+  int res = 0;
+  int descpor = 0;
+  printf("Bienvenido al programa calculador de precios segC:n el descuento\n");
+  printf("Ingrese el precio que quiere rebajar\nPrecio: ");
+  scanf("%d", &precio);
+  printf("Ingrese el descuento que quiere aplicar como porcentaje.\n");
+  printf("Descuento: ");
+  scanf ("%d", &desc);
+  descpor = 100-desc;
+  res = (descpor*precio/100);
+  printf("Su precio con descuento es de %d", res);
+}
