@@ -4,16 +4,29 @@ int
 main ()
 {
   int desc = 0;
-  int precio = 0;
+  int preciopropio = 0;
   int res = 0;
   int descpor = 0;
-  printf("Bienvenido al programa calculador de precios segC:n el descuento\n");
-  printf("Ingrese el precio que quiere rebajar\nPrecio: ");
-  scanf("%d", &precio);
+  int precioventa = 0;
+  int Ganancia = 0;
+  int Perdida = 0;
+  printf("Bienvenido al programa calculador de precios según el descuento\n");
+  printf("Ingrese el precio del producto que quiere rebajar\nPrecio: ");
+  scanf("%d", &precioventa);
+  printf("Ingrese el precio del producto que le costó a usted\nPrecio: ");
+  scanf("%d", &preciopropio);
   printf("Ingrese el descuento que quiere aplicar como porcentaje.\n");
   printf("Descuento: ");
   scanf ("%d", &desc);
   descpor = 100-desc;
-  res = (descpor*precio/100);
+  res = (descpor*precioventa/100);
   printf("Su precio con descuento es de %d", res);
+  if(res<preciopropio){
+      Perdida= preciopropio-res;
+      printf("Usted tiene una perdida de: %d", Perdida);
+  }
+  if(res>preciopropio){
+      Ganancia= res-preciopropio;
+      printf("Usted tiene una ganancia de: %d", Ganancia);
+  }
 }
