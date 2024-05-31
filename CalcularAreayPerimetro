@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-#include <stdio.h>
 const int pi = 3.14159265358979323846264338327950288
 int main()
 {
@@ -31,4 +29,3 @@ int main()
         printf("El perímetro del circulo es " perimetro"\n El área del circulo es" area);
     return 0;
 }
-
