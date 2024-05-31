@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+   float numero = 0; 
+   float LadoBase = 0;
+   float LadoAltura = 0;
+   float Altura = 0;
+    printf("Bienvenido al programa que calcula área y perímetro\n Indique si su figura es:\n");
+    printf(" Un paralelogramo (escriba 1), un circulo (escriba 2) o un triángulo(escriba 3):\n");
+    scanf("%f",&numero);
+    if(numero==1){
+        printf("Ingrese la base del paralelogramo")
+        scanf("%f",&LadoBase)
+        printf("Ingrese el otro lado del paralelogramo")
+        scanf("%f",&LadoAltura)
+        printf("Ingrese la altura del paralelogramo")
+        scanf("%f",&Altura)
+    }
+    int edad = 2024 - numero;
+    printf("tu edad es: %d", edad);
+    
+    return 0;
+}
