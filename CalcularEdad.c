@@ -2,10 +2,10 @@
 
 int main()
 {
-    int num = 0; 
+    int numero = 0; 
     printf("Indique su año de nacimiento:       Año:");
-    scanf("%d",&num);
-    int edad = 2024 - num;
+    scanf("%d",&numero);
+    int edad = 2024 - numero;
     printf("tu edad es: %d", edad);
     
     return 0;
