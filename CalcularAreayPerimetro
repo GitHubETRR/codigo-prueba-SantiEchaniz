@@ -1,6 +1,6 @@
 #include <stdio.h>
-const int pi = 3.14159265358979323846264338327950288;
-int main()
+const float pi = 3.14159265358979323846264338327950288;
+int main ()
 {
    float numero = 0; 
    float LadoBase = 0;
@@ -23,11 +23,11 @@ int main()
         scanf("%f",&Altura);
         perimetro = 2*(LadoBase+LadoAltura);
         area = (LadoBase*LadoAltura);
-        printf("El perímetro del paralelogramo es: %.2f", perimetro);
+        printf("El perímetro del paralelogramo es: %f", perimetro);
         printf("\n El área del paralelogramo es: %f", area);
     }
     if(numero==2){
-        printf("Ingrese el radio del círculo");
+        printf("Ingrese el radio del círculo: ");
         scanf("%f",&Radio);
         float perimetro = 2*pi*Radio;
         float area = (pi*Radio*Radio);
