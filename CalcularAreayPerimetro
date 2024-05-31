@@ -10,15 +10,17 @@ int main()
     printf(" Un paralelogramo (escriba 1), un circulo (escriba 2) o un triángulo(escriba 3):\n");
     scanf("%f",&numero);
     if(numero==1){
-        printf("Ingrese la base del paralelogramo")
-        scanf("%f",&LadoBase)
-        printf("Ingrese el otro lado del paralelogramo")
-        scanf("%f",&LadoAltura)
-        printf("Ingrese la altura del paralelogramo")
-        scanf("%f",&Altura)
+        printf("Ingrese la base del paralelogramo");
+        scanf("%f",&LadoBase);
+        printf("Ingrese el otro lado del paralelogramo");
+        scanf("%f",&LadoAltura);
+        printf("Ingrese la altura del paralelogramo");
+        scanf("%f",&Altura);
+        float perimetro = 2*(LadoBase+LadoAltura);
+        floar area = LadoBase*LadoAltura);
+        printf("El perímetro del paralelogramo es " perimetro"\n El área del paralelogramo es" area);
     }
-    int edad = 2024 - numero;
-    printf("tu edad es: %d", edad);
     
     return 0;
 }
+
