@@ -1,5 +1,5 @@
 #include <stdio.h>
-const int pi = 3.14159265358979323846264338327950288
+const int pi = 3.14159265358979323846264338327950288;
 int main()
 {
    float numero = 0; 
@@ -7,25 +7,46 @@ int main()
    float LadoAltura = 0;
    float Altura = 0;
    float Radio = 0;
+   float Ladoa = 0;
+   float Ladob = 0;
+   float perimetro = 0;
+   float area = 0;
     printf("Bienvenido al programa que calcula área y perímetro\n Indique si su figura es:\n");
     printf(" Un paralelogramo (escriba 1), un circulo (escriba 2) o un triángulo(escriba 3):\n");
     scanf("%f",&numero);
     if(numero==1){
-        printf("Ingrese la base del paralelogramo");
+        printf("Ingrese la base del paralelogramo: ");
         scanf("%f",&LadoBase);
-        printf("Ingrese el otro lado del paralelogramo");
+        printf("Ingrese el otro lado del paralelogramo: ");
         scanf("%f",&LadoAltura);
-        printf("Ingrese la altura del paralelogramo");
+        printf("Ingrese la altura del paralelogramo: ");
         scanf("%f",&Altura);
-        float perimetro = 2*(LadoBase+LadoAltura);
-        floar area = LadoBase*LadoAltura);
-        printf("El perímetro del paralelogramo es " perimetro"\n El área del paralelogramo es" area);
+        perimetro = 2*(LadoBase+LadoAltura);
+        area = (LadoBase*LadoAltura);
+        printf("El perímetro del paralelogramo es: %.2f", perimetro);
+        printf("\n El área del paralelogramo es: %f", area);
     }
     if(numero==2){
         printf("Ingrese el radio del círculo");
-        scanf("%f",&radio);
-        float perimetro = 2*pi*radio;
-        floar area = pi*radio*radio);
-        printf("El perímetro del circulo es " perimetro"\n El área del circulo es" area);
+        scanf("%f",&Radio);
+        float perimetro = 2*pi*Radio;
+        float area = (pi*Radio*Radio);
+        printf("El perímetro del circulo es %f", perimetro); 
+        printf("\n El área del circulo es %f", area);
+    }
+    if(numero==3){
+        printf("Ingrese la base del triángulo: ");
+        scanf("%f",&LadoBase);
+        printf("Ingrese otro lado del triángulo: ");
+        scanf("%f",&Ladoa);
+        printf("Ingrese otro lado del triángulo: ");
+        scanf("%f",&Ladob);
+        printf("Ingrese la altura del triángulo: ");
+        scanf("%f",&Altura);
+        float perimetro = (LadoBase+Ladoa+Ladob);
+        float area = (LadoBase*Altura/2);
+        printf("El perímetro del triángulo es %f", perimetro);
+        printf("\n El área del triángulo es %f", area);
     return 0;
+    }
 }
