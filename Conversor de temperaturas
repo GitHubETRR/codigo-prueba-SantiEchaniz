@@ -1,0 +1,50 @@
+#include <stdio.h>
+const float BA= 32;
+int main ()
+{
+  float Tempinicial = 0;
+  float Tempfinal = 0;
+  float Tempres = 0;
+  float Temp = 0;
+ printf("Bienvenido al conversor de temperatiras en diferentes unidades");
+ printf("\nIngrese que unidad tiene usted:");
+ printf("\nGrados Celcius (1), Grados Farenheit (2), Kelvin (3)");
+ printf("\n Opción: ");
+ scanf("%f", &Tempinicial);
+ printf("\nIngrese que unidad de conversión:");
+ printf("\nGrados Celcius (1), Grados Farenheit (2), Kelvin (3)");
+ printf("\n Opción: ");
+  scanf("%f", &Tempfinal);
+  printf("Ingrese la temperatura: ");
+  scanf("%f", &Temp);
+  if((Tempinicial==1)&&(Tempfinal==2)){
+      Tempres= (Temp*1.8)+BA;
+      printf("La temperatura es de %f", Tempres);
+      printf("°F Farenheit");
+  }
+  if((Tempinicial==1)&&(Tempfinal==3)){
+      Tempres= (Temp+273.15);
+      printf("La temperatura es de %f", Tempres);
+      printf(" Kelvin");
+  }
+  if((Tempinicial==2)&&(Tempfinal==1)){
+      Tempres= (Temp-32)*0.555555555;
+      printf("La temperatura es de %f", Tempres);
+      printf("°C Celcius ");
+  }
+  if((Tempinicial==2)&&(Tempfinal==3)){
+      Tempres= (Temp-32)*0.555555555+273.15;
+      printf("La temperatura es de %f", Tempres);
+      printf(" Kelvin");
+  }
+  if((Tempinicial==3)&&(Tempfinal==1)){
+      Tempres= Temp-273.15;
+      printf("La temperatura es de %f", Tempres);
+      printf("°C Celcius ");
+  }
+  if((Tempinicial==3)&&(Tempfinal==2)){
+      Tempres= (Temp-273.15)*1.8+32;
+      printf("La temperatura es de %f", Tempres);
+      printf("°C Farenheit");
+  }
+}
