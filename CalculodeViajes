@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    float servicio = 0;
+    float distancia = 0;
+    float costo = 0;
+    float precio = 0;
+    printf("Bienvenido al programa para calcular el precio de su vieja en taxi/Remis/Uber/Cabify");
+    printf("\nIngrese el costo de servicio o bajada de bandera");
+    printf("\nCosto de servicio en pesos: ");
+    scanf("%f", &servicio);
+    printf("\nAhora ingrese la distancia recorrida en cantidad de cuadras");
+    printf("\nDistancia en cuadras: ");
+    scanf("%f", &distancia);
+    printf("\nAhora ingrese el costo del servicio por cuadra");
+    printf("\nCosto en pesos: ");
+    scanf("%f", &costo);
+    precio = servicio+costo*distancia;
+    printf("\nEl costo de su viaje es: %f ", precio);
+    printf("pesos");
+    
+    
+    return 0;
+}
