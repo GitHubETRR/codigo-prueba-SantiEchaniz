@@ -6,7 +6,7 @@ int main ()
   float Tempfinal = 0;
   float Tempres = 0;
   float Temp = 0;
- printf("Bienvenido al conversor de temperatiras en diferentes unidades");
+ printf("Bienvenido al conversor de temperaturas en diferentes unidades");
  printf("\nIngrese que unidad tiene usted:");
  printf("\nGrados Celcius (1), Grados Farenheit (2), Kelvin (3)");
  printf("\n Opción: ");
