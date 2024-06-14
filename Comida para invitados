@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int Invitados, bebidas, comida;
+    printf("Ingresa la cantidad de invitados: ");
+    scanf("%d", &Invitados);
+    bebidas = Invitados*0.5;
+    comida= Invitados*2;
+    printf("\nNecesitas %d", bebidas);
+    printf(" bebidas.");
+    printf("\nNecesitas %d", comida);
+    printf(" porciones de comida.");
+    return 0;
+}
