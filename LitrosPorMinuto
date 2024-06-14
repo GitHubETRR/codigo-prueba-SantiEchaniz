@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    float segundos;
+    float Litros;
+    float LporM;
+    printf("Bienvenido al calculador de litros por minuto.");
+    printf("\nNececitarás: Un balde y un celular con cronómetro.");
+    printf("\nPrimero tenés que cronometrar cuanto tarda en llenarse el balde.");
+    printf("\nCapacidad en litros del balde: ");
+    scanf("%f", &Litros);
+    printf("\nSegundos que tardó en llenarse: ");
+    scanf("%f", &segundos);
+    LporM = Litros/segundos*60;
+    printf("\nUsted tiene un flujo de %f", LporM);
+    printf(" Litros por minuto");
+    return 0;
+}
