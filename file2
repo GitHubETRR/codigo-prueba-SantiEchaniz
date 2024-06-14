@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+    char seleccion, setlist, duracion;
+    printf("Bienvenido al programa en el que vas a poder calcular la duración\no cantidad de caciones que tiene el cocierto al que vas");
+    printf("\nIngrese *setlist* si sabe cuantas canciones tiene el setlist del coicerto");
+    scanf("%c", &)
+    return 0;
+}
