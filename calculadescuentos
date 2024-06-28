@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int
+main ()
+{
+  int desc = 0;
+  int preciopropio = 0;
+  int res = 0;
+  int descpor = 0;
+  int precioventa = 0;
+  int Ganancia = 0;
+  int Perdida = 0;
+  printf("Bienvenido al programa calculador de precios según el descuento\n");
+  printf("Ingrese el precio del producto que quiere rebajar\nPrecio: ");
+  scanf("%d", &precioventa);
+  printf("Ingrese el precio del producto que le costó a usted\nPrecio: ");
+  scanf("%d", &preciopropio);
+  printf("Ingrese el descuento que quiere aplicar como porcentaje.\n");
+  printf("Descuento: ");
+  scanf ("%d", &desc);
+  descpor = 100-desc;
+  res = (descpor*precioventa/100);
+  printf("Su precio con descuento es de: %d", res);
+  printf(" Pesos");
+  if(res<preciopropio){
+      Perdida= preciopropio-res;
+      printf("\nUsted tiene una perdida de: %d", Perdida);
+      printf(" Pesos");
+  }
+  if(res>preciopropio){
+      Ganancia= res-preciopropio;
+      printf("Usted tiene una ganancia de: %d", Ganancia);
+      printf(" Pesos");
+  }
+}

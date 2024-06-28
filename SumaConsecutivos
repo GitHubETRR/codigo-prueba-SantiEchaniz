@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    float Num = 0;
+    float suma = 0;
+    printf("Bienvenido al programa para sumer números consecutivos");
+    printf("\nIngrese que número quiere aplicarle la suma gaussiana");
+    printf("\nNúmero: ");
+    scanf("%f", &Num);
+    suma = Num*(Num+1)/2;
+    printf("La suma consecutiva es: %f", suma);
+    return 0;
+}
