@@ -1,0 +1,51 @@
+#include <stdio.h>
+#define MAX 50
+#define cant_pers 5
+
+int imprimiropciones();
+void buscarproducto();
+
+struct inventariorest
+    {
+        char producto[MAX];
+        int cantidad;
+        float precio;
+    };
+
+
+
+int main()
+{
+    int ingreso;
+    struct inventariorest inventario [cant_pers];
+    imprimiropciones();
+    scanf("%d", &ingreso);
+    switch (ingreso){
+        case 1: 
+        
+        break;
+        
+        case 2:
+        
+        break;
+        
+        default:
+        break;
+    };
+    return 0;
+}
+
+void buscarproducto(struct inventariorest inventario[], int tam) {
+    char nombreBuscado[30];  
+    printf("Ingrese el nombre del producto: ");
+    scanf(" %c", nombreBuscado);
+]
+
+
+
+int imprimiropciones(){
+    printf("Que quieres hacer");
+    printf("\n 1.Buscar producto");
+    printf("\n 2.Agregar producto");
+    printf("\n:");
+}
