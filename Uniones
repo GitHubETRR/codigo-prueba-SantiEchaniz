@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    union
+    {
+        float num;
+        unsigned char pos[4];
+    }pepe;
+    
+    pepe.num=11;
+    printf("%x\n",pepe.pos[0]);
+    printf("%x\n",pepe.pos[1]);
+    printf("%x\n",pepe.pos[2]);
+    printf("%x\n",pepe.pos[3]);
+    return 0;
+}

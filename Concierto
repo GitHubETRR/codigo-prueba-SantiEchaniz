@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+char main()
+{
+    char seleccion;
+    int setlist, duracion;
+    float horas;
+    printf("Bienvenido al programa en el que vas a poder calcular la duración\no cantidad de canciones que tiene el cocierto al que vas");
+    printf("\nIngrese *s* si sabe cuantas canciones tiene el setlist del concierto");
+    printf("\nIngrese *d* si sabe cuanto dura el concierto");
+    printf("\n Respuesta: ");
+    scanf("%c", &seleccion);
+    if((seleccion=='s')||(seleccion=='S')){
+        printf("Ingrese la cantidad de canciones");
+        printf("\nCantidad: ");
+        scanf("%d", &setlist);
+        int dursetlist= 3.30*setlist;
+        horas  = dursetlist/60;
+        printf("La duracion del concierto es de %f", horas);
+        printf(" horas aprox");
+    }
+    if((seleccion=='d')||(seleccion=='D')){
+        printf("\nIngrese la duración del concierto en horas");
+        printf("\nDuración: ");
+        scanf("%d", &duracion);
+        int minutos = duracion*60;
+        int cantsetlist = minutos/3.30;
+        printf("\nLa cantidad es de %d", cantsetlist);
+        printf(" canciones aprox");
+    }
+    return 0;
+}
